@@ -8,4 +8,4 @@ weight = float(weight)
 
 bmi = weight / (height ** 2)
 
-print("Your BMI is {:.2f}".format(bmi))
+print("Your BMI is {:.2f}".format(bmi ))
