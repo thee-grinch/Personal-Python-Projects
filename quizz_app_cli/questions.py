@@ -7,7 +7,9 @@ class question():
         """this method initializes the class question """
         self.__question = question
         self.__answer = answer
-        self.__options = list(set(answer + options))
+        self.__options = options
+        self.__options.append(answer)
+        random.shuffle(self.__options)
     
     def check_answer(self, index):
         """This method checks whether the selected """
@@ -19,7 +21,7 @@ class question():
     def answer(self):
         return self.__answer
     
-    @answersetter
+    @answer.setter
     def answer(self, ans):
         self.__answer = ans
     
@@ -27,7 +29,7 @@ class question():
     def question(self):
         return self.__question
     
-    @questionsetter
+    @question.setter
     def question(self, question):
         self.__question = question
     
@@ -35,7 +37,7 @@ class question():
     def options(self):
         return ", ".join(self.__options)
     
-    @optionssetter
+    @options.setter
     def options(self, *args):
         opt = list(set(args))
         random.shuffle(opt)

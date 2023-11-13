@@ -2,11 +2,14 @@ from questions import question
 
 class quiz():
     """This is a class to manage the quizes"""
-    def __init__(self, name="", questions=[], duration=10, ) -> None:
-        self.__name = name
-        self.__questions = questions
-        self.__duration = duration
-        self.__high_score = 0
+    def __init__(self, *args, **kwargs ) -> None:
+        if args:
+            self.__name = args[0]
+            self.__questions = args[1]
+            self.__duration = args[2]
+            self.__high_score = 0
+        if kwargs:
+            for name
 
     def take_user_input(self):
         i = int(input("Input your choice: "))
@@ -19,7 +22,7 @@ class quiz():
             return 1
         return 0
     
-    @highscoresetter
+    @high_scoresetter
     def set_highscore(self, score):
         """set a high score"""
         if score > self.__high_score:
