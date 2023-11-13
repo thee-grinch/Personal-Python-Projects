@@ -26,11 +26,12 @@ This is a quiz class, it is used to manage the set of questions to be used in a 
 
 <h3>Questions</h3>
 <p>This is a question class, it has some attributes and methods relating to questions </p>
-<p>
-    **attributes**
-    1. question - a text containing the question
-    2. answer - The answer to the question
-    3. options - the options of the answer
-    4. check answer - checks whether an answer  is correct
 
-</p>
+**attributes**
+1. question - a text containing the question
+2. answer - The answer to the question
+3. options - the options of the answer
+4. check answer - checks whether an answer  is correct
+
+**methods**
+check answer - checks whether the answer is correct and returns zero
