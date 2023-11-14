@@ -56,3 +56,46 @@ the methods to be defined here are:
      this method reloads the obects stored in file to the object
 
 Up to this stage, i have only managed  to save the tasks to storage, as a json file, i have not yet implemented the reload from storage and implement work with the saved data. However i will try and implement that when ill be working with actual json from an api
+
+## Example of working
+
+```
+mordecai@pappi:~/Personal-Python-Projects/quizz_app_cli$ python3 cli.py
+---reloaded objects---
+{'test task': {'name': 'test task', 'questions': [{'question': 'Who was The first penyan president?', 'answer': 'Kenyatta', 'options': ['kibaki', 'uhuru', 'Kenyatta', 'moi']}, {'question': 'Do you love red?', 'answer': 'yes', 'options': ['I dont know', 'yes', 'yes', 'no']}, {'question': 'Who is Ruto?', 'answer': 'president', 'options': ['conman', 'hustler', 'president', 'thief']}, {'question': 'who is Mordecai?', 'answer': 'Senior Backend Developer', 'options': ['Senior Backend Developer', 'child', 'hustler', 'it guy', 'student']}], 'duration': 5, 'high_score': 0}}
+{'name': 'test task', 'questions': [{'question': 'Who was The first penyan president?', 'answer': 'Kenyatta', 'options': ['kibaki', 'uhuru', 'Kenyatta', 'moi']}, {'question': 'Do you love red?', 'answer': 'yes', 'options': ['I dont know', 'yes', 'no', 'yes']}, {'question': 'Who is Ruto?', 'answer': 'president', 'options': ['thief', 'president', 'conman', 'hustler']}, {'question': 'who is Mordecai?', 'answer': 'Senior Backend Developer', 'options': ['child', 'Senior Backend Developer', 'student', 'hustler', 'it guy']}], 'duration': 5, 'high_score': 0}
+<class 'dict'>
+MnM  run_tasks
+*** Unknown syntax: run_tasks
+MnM  run_quiz
+Who was The first penyan president?
+         0. kibaki
+         1. uhuru
+         2. Kenyatta
+         3. moi
+Input your choice: 2
+Do you love red?
+         0. I dont know
+         1. yes
+         2. no
+         3. yes
+Input your choice: 1
+Who is Ruto?
+         0. thief
+         1. president
+         2. conman
+         3. hustler
+Input your choice: 1
+who is Mordecai?
+         0. child
+         1. Senior Backend Developer
+         2. student
+         3. hustler
+         4. it guy
+Input your choice: 1
+High score 4
+Your score is:  4
+MnM  quit
+thanks for participating
+MnM  mordecai@pappi:~/Personal-Python-Projects/quizz_app_cli$ 
+```
