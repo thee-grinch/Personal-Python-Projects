@@ -35,3 +35,24 @@ This is a quiz class, it is used to manage the set of questions to be used in a 
 
 **methods**
 check answer - checks whether the answer is correct and returns zero
+
+<h3>Filestorage</h3>
+<p>this is a class that we will use its instance to save all the classes and objects to storage using json</p>
+
+**variables**
+the variables defined here are:
+1. file_path
+    this is the path where the json file will be stored
+2. objects
+    this is the list of the object dictionaries, to be used to store and reload the data
+
+**methods**
+the methods to be defined here are:
+1. save
+    saves the object to the storage as a json file
+2. new
+    adds a new dictionary to the objects
+3. reload
+     this method reloads the obects stored in file to the object
+
+Up to this stage, i have only managed  to save the tasks to storage, as a json file, i have not yet implemented the reload from storage and implement work with the saved data. However i will try and implement that when ill be working with actual json from an api
